@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,22 +15,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="DudelView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ekq-DL-b7s">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" id="vrV-EI-VyS">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6NX-RR-596">
-                                            <rect key="frame" x="16" y="7" width="62" height="30"/>
+                                            <rect key="frame" x="20" y="7" width="62" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="freehand"/>
-                                            <state key="selected" title="freehand">
+                                            <state key="normal" title="F"/>
+                                            <state key="selected" title="F">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
-                                            <state key="highlighted" title="freehand">
+                                            <state key="highlighted" title="F">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
@@ -41,13 +41,13 @@
                                     <barButtonItem title="|" style="plain" id="pnm-4D-nRR"/>
                                     <barButtonItem style="plain" id="AcP-N5-iUi">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H2u-yz-kG0">
-                                            <rect key="frame" x="102.5" y="7" width="30" height="30"/>
+                                            <rect key="frame" x="106.5" y="7" width="30" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="line"/>
-                                            <state key="selected" title="line">
+                                            <state key="normal" title="L"/>
+                                            <state key="selected" title="L">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
-                                            <state key="highlighted" title="line">
+                                            <state key="highlighted" title="L">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
@@ -58,13 +58,13 @@
                                     <barButtonItem title="|" style="plain" id="cc0-nN-WRJ"/>
                                     <barButtonItem style="plain" id="utg-9G-LET">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GQY-ad-6Mk">
-                                            <rect key="frame" x="157" y="7" width="65" height="30"/>
+                                            <rect key="frame" x="161" y="7" width="65" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="rectangle"/>
-                                            <state key="selected" title="rectangle">
+                                            <state key="normal" title="R"/>
+                                            <state key="selected" title="R">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
-                                            <state key="highlighted" title="rectangle">
+                                            <state key="highlighted" title="R">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
@@ -75,13 +75,13 @@
                                     <barButtonItem title="|" style="plain" id="gTv-oY-Tjt"/>
                                     <barButtonItem style="plain" id="N5f-fF-vED">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Jz-PH-odq">
-                                            <rect key="frame" x="246.5" y="7" width="44" height="30"/>
+                                            <rect key="frame" x="250.5" y="7" width="44" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="ellipse"/>
-                                            <state key="selected" title=" ellipse">
+                                            <state key="normal" title="E"/>
+                                            <state key="selected" title=" E">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
-                                            <state key="highlighted" title="ellipse">
+                                            <state key="highlighted" title="E">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
@@ -92,17 +92,29 @@
                                     <barButtonItem title="|" style="plain" id="I7j-Wo-yxZ"/>
                                     <barButtonItem style="plain" id="Kb1-jC-iZg">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DBl-Yd-2En">
-                                            <rect key="frame" x="315" y="7" width="41" height="30"/>
+                                            <rect key="frame" x="319" y="7" width="41" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="pencil"/>
-                                            <state key="selected" title="pencil">
+                                            <state key="normal" title="P"/>
+                                            <state key="selected" title="P">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
-                                            <state key="highlighted" title="pencil">
+                                            <state key="highlighted" title="P">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
                                                 <action selector="touchPencilItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l8O-dw-GL8"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="BJk-CE-9rj">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZVw-T7-ygV">
+                                            <rect key="frame" x="360" y="7" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="T"/>
+                                            <state key="selected" title="T"/>
+                                            <state key="highlighted" title="T"/>
+                                            <connections>
+                                                <action selector="touchTextItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Foz-nc-K3C"/>
                                             </connections>
                                         </button>
                                     </barButtonItem>
@@ -122,6 +134,7 @@
                         <outlet property="lineButton" destination="AcP-N5-iUi" id="jg3-fj-LpZ"/>
                         <outlet property="pencilButton" destination="Kb1-jC-iZg" id="7sj-OG-4Xd"/>
                         <outlet property="rectangleButton" destination="utg-9G-LET" id="KTV-pc-0rx"/>
+                        <outlet property="textButton" destination="BJk-CE-9rj" id="dLV-xZ-eF1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

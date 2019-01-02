@@ -13,6 +13,7 @@
 #import "RectangleTool.h"
 #import "EllipseTool.h"
 #import "FreehandTool.h"
+#import "TextTool.h"
 #import "DudelView.h"
 
 @interface ViewController ()<ToolDelegate, DudelViewDelegate>
@@ -26,10 +27,12 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *rectangleButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *ellipseButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *pencilButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *textButton;
 
 @property (strong, nonatomic) UIColor *strokeColor;
 @property (strong, nonatomic) UIColor *fillColor;
 @property (assign, nonatomic) CGFloat strokeWidth;
+@property (strong, nonatomic) UIFont *font;
 
 @end
 
@@ -50,6 +53,7 @@
 }
 
 - (void)deselectAllToolButtons {
+    [self deselectBarButtonItem:_textButton];
     [self deselectBarButtonItem:_freehandButton];
     [self deselectBarButtonItem:_lineButton];
     [self deselectBarButtonItem:_rectangleButton];
@@ -72,6 +76,7 @@
     self.fillColor = [UIColor lightGrayColor];
     self.strokeColor = [UIColor blackColor];
     self.strokeWidth = 2;
+    self.font = [UIFont systemFontOfSize:24];
 }
 
 - (BOOL)shouldAutorotate {
@@ -100,6 +105,11 @@
 - (IBAction)touchPencilItem:(id)sender {
     self.currentTool = [PencilTool sharedPencilTool];
     [self selectBarButtonItem:self.pencilButton];
+}
+
+- (IBAction)touchTextItem:(id)sender {
+    self.currentTool = [TextTool sharedTextTool];
+    [self selectBarButtonItem:self.textButton];
 }
 
 - (void)drawTemp {
