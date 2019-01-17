@@ -34,6 +34,8 @@
 @property (assign, nonatomic) CGFloat strokeWidth;
 @property (strong, nonatomic) UIFont *font;
 
+@property (strong, nonatomic, readonly) NSString *saveFilename;
+
 @end
 
 @implementation ViewController
@@ -70,6 +72,12 @@
     [_dudelView setNeedsDisplay];
 }
 
+- (NSString *)saveFilename {
+    NSArray *dirs = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *filename = [[dirs firstObject] stringByAppendingPathComponent:@"Untitled.dudeldoc"];
+    return filename;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.currentTool = [PencilTool sharedPencilTool];
@@ -77,6 +85,15 @@
     self.strokeColor = [UIColor blackColor];
     self.strokeWidth = 2;
     self.font = [UIFont systemFontOfSize:24];
+    [self loadFromFile:self.saveFilename];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationWillResignActive:)
+                                                 name:UIApplicationWillResignActiveNotification
+                                               object:[UIApplication sharedApplication]];
+}
+
+- (void)applicationWillResignActive:(NSNotification *)note {
+    [self saveCurrentToFile:self.saveFilename];
 }
 
 - (BOOL)shouldAutorotate {
@@ -143,6 +160,20 @@
 
 - (UIView *)viewForUseWithTool:(id<Tool>)t {
     return self.view;
+}
+
+- (BOOL)saveCurrentToFile:(NSString *)filename {
+    return [NSKeyedArchiver archiveRootObject:self.dudelView.drawables
+                                       toFile:filename];
+}
+
+- (BOOL)loadFromFile:(NSString *)filename {
+    id root = [NSKeyedUnarchiver unarchiveObjectWithFile:filename];
+    if (root) {
+        self.dudelView.drawables = root;
+        [self.dudelView setNeedsDisplay];
+    }
+    return root != nil;
 }
 
 @end

@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PathDrawingInfo : NSObject<Drawable>
+@interface PathDrawingInfo : NSObject<Drawable, NSCoding>
 
 @property (strong, nonatomic) UIBezierPath *path;
 

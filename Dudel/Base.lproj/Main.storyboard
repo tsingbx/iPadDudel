@@ -23,14 +23,14 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" id="vrV-EI-VyS">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6NX-RR-596">
-                                            <rect key="frame" x="20" y="7" width="62" height="30"/>
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6NX-RR-596">
+                                            <rect key="frame" x="20" y="7" width="65" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="F"/>
-                                            <state key="selected" title="F">
+                                            <state key="normal" title="Freehand"/>
+                                            <state key="selected" title="Freehand">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
-                                            <state key="highlighted" title="F">
+                                            <state key="highlighted" title="Freehand">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
@@ -40,14 +40,14 @@
                                     </barButtonItem>
                                     <barButtonItem title="|" style="plain" id="pnm-4D-nRR"/>
                                     <barButtonItem style="plain" id="AcP-N5-iUi">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H2u-yz-kG0">
-                                            <rect key="frame" x="106.5" y="7" width="30" height="30"/>
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H2u-yz-kG0">
+                                            <rect key="frame" x="109.5" y="7" width="30" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="L"/>
-                                            <state key="selected" title="L">
+                                            <state key="normal" title="Line"/>
+                                            <state key="selected" title="Line">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
-                                            <state key="highlighted" title="L">
+                                            <state key="highlighted" title="Line">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
@@ -57,14 +57,14 @@
                                     </barButtonItem>
                                     <barButtonItem title="|" style="plain" id="cc0-nN-WRJ"/>
                                     <barButtonItem style="plain" id="utg-9G-LET">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GQY-ad-6Mk">
-                                            <rect key="frame" x="161" y="7" width="65" height="30"/>
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GQY-ad-6Mk">
+                                            <rect key="frame" x="164" y="7" width="32" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="R"/>
-                                            <state key="selected" title="R">
+                                            <state key="normal" title="Rect"/>
+                                            <state key="selected" title="Rect">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
-                                            <state key="highlighted" title="R">
+                                            <state key="highlighted" title="Rect">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
@@ -74,14 +74,14 @@
                                     </barButtonItem>
                                     <barButtonItem title="|" style="plain" id="gTv-oY-Tjt"/>
                                     <barButtonItem style="plain" id="N5f-fF-vED">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Jz-PH-odq">
-                                            <rect key="frame" x="250.5" y="7" width="44" height="30"/>
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Jz-PH-odq">
+                                            <rect key="frame" x="220.5" y="7" width="45" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="E"/>
-                                            <state key="selected" title=" E">
+                                            <state key="normal" title="Ellipse"/>
+                                            <state key="selected" title=" Ellipse">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
-                                            <state key="highlighted" title="E">
+                                            <state key="highlighted" title="Ellipse">
                                                 <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
@@ -91,28 +91,25 @@
                                     </barButtonItem>
                                     <barButtonItem title="|" style="plain" id="I7j-Wo-yxZ"/>
                                     <barButtonItem style="plain" id="Kb1-jC-iZg">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DBl-Yd-2En">
-                                            <rect key="frame" x="319" y="7" width="41" height="30"/>
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DBl-Yd-2En">
+                                            <rect key="frame" x="290" y="5" width="42" height="34"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="P"/>
-                                            <state key="selected" title="P">
-                                                <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                            <state key="highlighted" title="P">
-                                                <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
+                                            <state key="normal" title="Pencil"/>
+                                            <state key="selected" title="Pencil"/>
+                                            <state key="highlighted" title="Pencil"/>
                                             <connections>
                                                 <action selector="touchPencilItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l8O-dw-GL8"/>
                                             </connections>
                                         </button>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jOY-bw-BBN"/>
                                     <barButtonItem style="plain" id="BJk-CE-9rj">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZVw-T7-ygV">
-                                            <rect key="frame" x="360" y="7" width="46" height="30"/>
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZVw-T7-ygV">
+                                            <rect key="frame" x="718" y="7" width="30" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="T"/>
-                                            <state key="selected" title="T"/>
-                                            <state key="highlighted" title="T"/>
+                                            <state key="normal" title="Text"/>
+                                            <state key="selected" title="Text"/>
+                                            <state key="highlighted" title="Text"/>
                                             <connections>
                                                 <action selector="touchTextItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Foz-nc-K3C"/>
                                             </connections>

@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (BOOL)saveCurrentToFile:(NSString *)filename;
 
 @end
 

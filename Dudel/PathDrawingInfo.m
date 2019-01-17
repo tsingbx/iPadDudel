@@ -19,6 +19,15 @@
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [self init]) {
+        self.path = [aDecoder decodeObjectForKey:@"path"];
+        self.fillColor = [aDecoder decodeObjectForKey:@"fillColor"];
+        self.strokeColor = [aDecoder decodeObjectForKey:@"strokeColor"];
+    }
+    return self;
+}
+
 - (void)draw {
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSaveGState(context);
@@ -31,6 +40,15 @@
         [self.path stroke];
     }
     CGContextRestoreGState(context);
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.path
+                  forKey:@"path"];
+    [aCoder encodeObject:self.fillColor
+                  forKey:@"fillColor"];
+    [aCoder encodeObject:self.strokeColor
+                  forKey:@"strokeColor"];
 }
 
 @end

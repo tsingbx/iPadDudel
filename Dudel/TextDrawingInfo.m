@@ -21,6 +21,16 @@
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super init]) {
+        self.path = [aDecoder decodeObjectForKey:@"path"];
+        self.text = [aDecoder decodeObjectForKey:@"text"];
+        self.strokeColor = [aDecoder decodeObjectForKey:@"strokeColor"];
+        self.font = [aDecoder decodeObjectForKey:@"font"];
+    }
+    return self;
+}
+
 - (void)draw {
     
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -36,8 +46,17 @@
         CTFrameDraw(frame, context);
         CGContextRestoreGState(context);
     }
-    
-    
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.path
+                  forKey:@"path"];
+    [aCoder encodeObject:self.strokeColor
+                  forKey:@"strokeColor"];
+    [aCoder encodeObject:self.font
+                  forKey:@"font"];
+    [aCoder encodeObject:self.text
+                  forKey:@"text"];
 }
 
 @end
